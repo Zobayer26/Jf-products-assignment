@@ -1,7 +1,7 @@
 import UserIcon from "../../assets/Frame-1.svg"
 import SearchIcon from "../../assets/Frame-2.svg"
+import LogoIcon from "../../assets/Group 395.png"
 import GroupIcon from "../../assets/Group 409.svg"
-
 import Container from "../Container"
 
 
@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <Container>
             <div
-                className="h-[18px] flex justify-between items-center  py-[35px] 
+                className="h-[18px] flex justify-between items-center  py-[35px] relative
                  font-normal capitalize font-Poppins text-[18px] text-[#1A1A1A] leading-[100%] ">
                 <ul
                     className="flex justify-items-start items-center
@@ -51,8 +51,17 @@ const Header = () => {
                         </div>
                     </li>
                 </ul>
+                <div className=" w-[132px] h-[150px] absolute top-0 left-1/2 -translate-x-1/2 rounded-[75px]  z-10">
+                    <figure className="px-[10.25px] py-[11px]">
+                        <img
+                            src={LogoIcon}
+                            alt="Logo_Icon"
+                        />
+                    </figure>
+                </div>
             </div>
         </Container >
     )
 }
 export default Header
+{/*  */ }
