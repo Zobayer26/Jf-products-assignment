@@ -3,6 +3,11 @@
 @import "tailwindcss";
 
 @theme {
+    --color-primary: #1A1A1A;
+    --color-bgColor: #F2F4F6;
+    --color-button: #B0DD1D;
     --font-Poppins: "Poppins", sans-serif;
     --font-DM: "DM Sans", sans-serif;
 }
+
+/* rgb(26, 26, 26); */

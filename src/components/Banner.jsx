@@ -1,4 +1,5 @@
 import BannerImg_1 from "../assets/Group 507.png"
+import Button from "./Button"
 export default function Banner() {
     return (
         <div className="w-full overflow-hidden">
@@ -16,14 +17,12 @@ export default function Banner() {
                         <h1 className="text-[#1A1A1A] text-[62px] leading-[72px] font-medium  font-Poppins ">
                             JF Privezy Grass Wall
                         </h1>
-                        <p className="text-[#1A1A1A] text-2xl leading-8 font-Poppins font-normal mt-5 mb-12.5">
+                        <p className="text-[#1A1A1A] text-2xl leading-8 font-Poppins font-normal mt-5 mb-12.5 ">
                             The perfact Blend of Greenery
                         </p>
-                        <button className=" bg-[#B0DD1D] rounded-[100px] px-8 py-4 text-[#1A1A1A] text-[18px]
-                        font-DM font-medium leading-[100%] capitalize flex justify-center items-center gap-[5px]">
-                            <span> Shop </span>
-                            <span>now</span>
-                        </button>
+                        <Button
+                            size="lg"
+                        />
                     </div>
                 </div>
             </div>
