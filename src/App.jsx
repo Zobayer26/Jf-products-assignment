@@ -3,6 +3,7 @@ import Container from "./components/Container";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Products from "./components/Products/Products";
+import Review from "./components/Reveiw";
 import { AgriProductData, LandScapeData } from "./data/data";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Container>
         <Products heading="Agricultural Products" data={AgriProductData} />
         <Products heading="Landscape Products" data={LandScapeData} />
+        <Review />
       </Container>
       <Footer />
     </div>
