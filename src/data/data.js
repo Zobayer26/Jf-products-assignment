@@ -62,4 +62,59 @@ const LandScapeData = [
   },
 ];
 
-export { AgriProductData, LandScapeData };
+const navLinks = [
+  {
+    id: 1,
+    title: "home",
+    link: "",
+  },
+  {
+    id: 2,
+    title: "Shop",
+    link: "",
+  },
+  {
+    id: 3,
+    title: "Our Story",
+    link: "",
+  },
+  {
+    id: 4,
+    title: "Blogs",
+    link: "",
+  },
+  {
+    id: 5,
+    title: "Contact",
+    link: "",
+  },
+];
+const quickLinks = [
+  {
+    id: 1,
+    title: "FAQs",
+    link: "",
+  },
+  {
+    id: 2,
+    title: "Terms & Conditions",
+    link: "",
+  },
+  {
+    id: 3,
+    title: "Privacy Policy",
+    link: "",
+  },
+  {
+    id: 4,
+    title: "Shipping Policy",
+    link: "",
+  },
+  {
+    id: 5,
+    title: "My Account",
+    link: "",
+  },
+];
+
+export { AgriProductData, LandScapeData, navLinks, quickLinks };

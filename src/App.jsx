@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import Container from "./components/Container";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Products from "./components/Products/Products";
 import { AgriProductData, LandScapeData } from "./data/data";
@@ -13,6 +14,7 @@ const App = () => {
         <Products heading="Agricultural Products" data={AgriProductData} />
         <Products heading="Landscape Products" data={LandScapeData} />
       </Container>
+      <Footer />
     </div>
   );
 };

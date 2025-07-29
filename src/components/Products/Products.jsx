@@ -10,7 +10,7 @@ const Products = ({ heading, data }) => {
             <div className=" grid grid-cols-4 gap-5">
                 {data.map((item) => (
                     <div key={item.id}
-                        className=" bg-bgColor p-2.5 rounded-[17px]">
+                        className=" bg-bgColor px-2.5 pt-2.5 pb-5 rounded-[17px]">
                         <div className=" flex items-center justify-center cursor-pointer">
                             <img
                                 className=" bg-center bg-cover"
