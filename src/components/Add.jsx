@@ -1,4 +1,4 @@
-import Icon from "../assets/Group 449.svg"
+import Icon from "../assets/icon.svg"
 
 const Add = () => {
     return (

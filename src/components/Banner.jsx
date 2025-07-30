@@ -1,4 +1,4 @@
-import BannerImg_1 from "../assets/Group 507.png"
+import BannerImg_1 from "../assets/banner.png"
 import Button from "./Button"
 export default function Banner() {
     return (

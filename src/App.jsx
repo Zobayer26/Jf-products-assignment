@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Add from "./components/Add";
 import Banner from "./components/Banner";
+import Branch from "./components/Branch";
 import Container from "./components/Container";
 import Customer from "./components/Customer";
 import Footer from "./components/Footer/Footer";
@@ -23,6 +24,7 @@ const App = () => {
       <Add />
       <Container>
         <Review />
+        <Branch />
       </Container>
       <Footer />
     </div>

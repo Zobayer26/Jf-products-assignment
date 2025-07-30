@@ -1,7 +1,7 @@
-import UserIcon from "../../assets/Frame-1.svg"
-import SearchIcon from "../../assets/Frame-2.svg"
-import LogoIcon from "../../assets/Group 395.png"
-import GroupIcon from "../../assets/Group 409.svg"
+import cartIcon from "../../assets/cart.svg"
+import LogoIcon from "../../assets/logo.png"
+import SearchIcon from "../../assets/search.svg"
+import UserIcon from "../../assets/user.svg"
 import Container from "../Container"
 
 
@@ -40,8 +40,8 @@ const Header = () => {
                     <li className="relative">
                         <img
                             className="w-6 h-6"
-                            src={GroupIcon}
-                            alt="Group_Icon"
+                            src={cartIcon}
+                            alt="cart_Icon"
                         />
                         <div className=" h-[18px] w-[18px] bg-[#1A1A1A] text-center absolute 
                            -top-1 -right-2 rounded-full ">

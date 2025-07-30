@@ -1,6 +1,6 @@
 import Facebook from "../../assets/facebook.png";
-import LogoIcon from "../../assets/Group 395.png";
 import Instgram from "../../assets/Instagram.svg";
+import LogoIcon from "../../assets/logo.png";
 import Youtube from "../../assets/Youtube.png";
 import { navLinks, quickLinks } from "../../data/data";
 import Button from "../Button";

@@ -8,6 +8,13 @@ import LandScapeImage_2 from "../assets/LandScape_2.png";
 import LandScapeImage_3 from "../assets/LandScape_3.png";
 import LandScapeImage_4 from "../assets/LandScape_4.png";
 
+import coimbatore from "../assets/Coimbatore.png";
+import chennai from "../assets/chennai.png";
+import goa from "../assets/goa.png";
+import hydrabad from "../assets/hydrabad.png";
+import kochi from "../assets/kochi.png";
+import mumbai from "../assets/mumbai.png";
+
 const AgriProductData = [
   {
     id: 1,
@@ -117,4 +124,37 @@ const quickLinks = [
   },
 ];
 
-export { AgriProductData, LandScapeData, navLinks, quickLinks };
+const branchData = [
+  {
+    id: 1,
+    title: "Coimbatore",
+    image: coimbatore,
+  },
+  {
+    id: 2,
+    title: "chennai",
+    image: chennai,
+  },
+  {
+    id: 3,
+    title: "hyderabad",
+    image: hydrabad,
+  },
+  {
+    id: 4,
+    title: "goa",
+    image: goa,
+  },
+  {
+    id: 5,
+    title: "Kochi",
+    image: kochi,
+  },
+  {
+    id: 6,
+    title: "mumbai",
+    image: mumbai,
+  },
+];
+
+export { AgriProductData, branchData, LandScapeData, navLinks, quickLinks };
