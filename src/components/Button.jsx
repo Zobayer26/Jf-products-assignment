@@ -15,7 +15,7 @@ const Button = ({
     return (
         <button
             className={`${bgColor} rounded-[100px] px-8  text-primary ${buttonSize[size]}
-                        font-DM font-medium leading-[100%] capitalize flex justify-center items-center
+                        font-DM font-medium leading-[100%] capitalize flex justify-center items-center 
                         gap-[5px]`}>
             <span> {children[0]} </span>
             <span>{children[1]}</span>
