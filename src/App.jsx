@@ -13,8 +13,10 @@ import { AgriProductData, LandScapeData } from "./data/data";
 const App = () => {
   return (
     <div>
+
       <Header />
       <Banner />
+
       <Container>
         <Products heading="Agricultural Products" data={AgriProductData} />
         <Products heading="Landscape Products" data={LandScapeData} />

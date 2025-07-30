@@ -8,12 +8,15 @@ import LandScapeImage_2 from "../assets/LandScape_2.png";
 import LandScapeImage_3 from "../assets/LandScape_3.png";
 import LandScapeImage_4 from "../assets/LandScape_4.png";
 
-import coimbatore from "../assets/Coimbatore.png";
 import chennai from "../assets/chennai.png";
+import coimbatore from "../assets/Coimbatore.png";
 import goa from "../assets/goa.png";
 import hydrabad from "../assets/hydrabad.png";
 import kochi from "../assets/kochi.png";
 import mumbai from "../assets/mumbai.png";
+
+import BannerImg_1 from "../assets/banner_img_1.png";
+import BannerImg_2 from "../assets/Banner_img_2.png";
 
 const AgriProductData = [
   {
@@ -156,5 +159,32 @@ const branchData = [
     image: mumbai,
   },
 ];
+const images = [
+  {
+    id: 1,
+    image: BannerImg_1,
+    title: "JF Privezy Grass Wall",
+    details: "The perfect Blend of Greenery",
+  },
+  {
+    id: 2,
+    image: BannerImg_2,
+    title: "JF Privezy Grass Wall",
+    details: "Where aesthetics meet durability",
+  },
+  {
+    id: 3,
+    image: BannerImg_1,
+    title: "JF Australian Trellis",
+    details: "Where aesthetics meet durability",
+  },
+];
 
-export { AgriProductData, branchData, LandScapeData, navLinks, quickLinks };
+export {
+  AgriProductData,
+  branchData,
+  images,
+  LandScapeData,
+  navLinks,
+  quickLinks,
+};
