@@ -43,6 +43,12 @@ const AgriProductData = [
     title: "JF Bluelink Mesh",
     price: "₹3,067.50 – ₹6,362.50",
   },
+  {
+    id: 5,
+    imageSrc: ProductImage_1,
+    title: "JF Barbed Wire- 270 GSM",
+    price: "₹4,995.00",
+  },
 ];
 
 const LandScapeData = [
