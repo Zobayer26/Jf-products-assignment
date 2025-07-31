@@ -10,11 +10,12 @@ const buttonSize = {
 const Button = ({
     children = ["Shop", "now"],
     size = "sm",
-    bgColor = "bg-[#B0DD1D]"
+    bgColor = "bg-[#B0DD1D]",
+    onClick
 }) => {
     return (
-        <button
-            className={`${bgColor} rounded-[100px] px-8  text-primary ${buttonSize[size]}
+        <button onClick={onClick}
+            className={`${bgColor} rounded-[100px] px-8  text-primary ${buttonSize[size]} cursor-pointer
                         font-DM font-medium leading-[100%] capitalize flex justify-center items-center 
                         gap-[5px]`}>
             <span> {children[0]} </span>
@@ -28,4 +29,5 @@ Button.propTypes = {
     children: PropTypes.node,
     size: PropTypes.string,
     bgColor: PropTypes.string,
+    onClick: PropTypes.func
 }

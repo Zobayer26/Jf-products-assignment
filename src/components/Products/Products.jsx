@@ -17,7 +17,6 @@ const Products = ({ heading, data }) => {
 
     }
 
-    console.log(data.length)
     const handleNext = () => {
         if (!ref.current) return
         x += 325

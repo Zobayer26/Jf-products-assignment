@@ -1,9 +1,34 @@
+import { useState } from "react";
+import { NavLink, } from "react-router-dom";
 import locationIcon from "../assets/location-frame.svg";
-import bgImage from "../assets/map.png";
 import { branchData } from "../data/data";
 import Button from "./Button";
 
 export default function Branch() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+    })
+    const [location, setLocation] = useState(branchData[0].location)
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    function handleChange(e) {
+
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    function handleSubmit() {
+        console.log(formData)
+    }
+    function handleLocation(index) {
+        setActiveIndex(index)
+        setLocation(branchData[index].location)
+    }
     return (
         <section style={{ border: '1px solid rgba(0, 43, 85, 0.2)' }}
             className="p-2.5 border  my-[100px] rounded-3xl relative">
@@ -18,16 +43,26 @@ export default function Branch() {
                 </button>
             </div>
             <div className="w-[811px] mx-auto grid grid-cols-6 gap-15 mb-5 mt-9.5">
-                {branchData.map((item) => (
-                    < div key={item.id}
-                        className="flex flex-col items-center justify-center w-20 gap-2.5 h-[83px]">
-                        <div className=" px-2.5 py-[5px] h-14 ">
-                            <img className="w-full h-full bg-center bg-cover"
-                                src={item.image} alt="Coimbatore" />
+                {branchData.map((item, index) => (
+                    <NavLink
+                        key={item.id}
+                        to={`#${item.title}`}
+                        onClick={() => handleLocation(index)}
+                        className={`flex flex-col items-center justify-center  gap-2.5  cursor-pointer ${activeIndex === index ? "w-[116px] px-3 py-1.5 bg-[#B0DD1D1A] rounded-2xl h-[116px]" : ""
+                            }`}
+                    >
+
+                        <div className="px-2.5 py-[5px] h-14 ">
+                            <img
+                                className="w-full h-full bg-center bg-cover"
+                                src={item.image}
+                                alt={item.title}
+                            />
                         </div>
-                        <h3 className=" uppercase font-Poppins font-medium text-sm leading-[120%] text-primary">
-                            {item.title}</h3>
-                    </div>
+                        <h3 className="uppercase font-Poppins font-medium text-sm leading-[120%] text-primary">
+                            {item.title}
+                        </h3>
+                    </NavLink>
                 ))}
 
             </div>
@@ -52,6 +87,8 @@ export default function Branch() {
                             name="email"
                             placeholder="Email"
                             autoComplete="off"
+                            value={formData.email}
+                            onChange={handleChange}
                         />
                     </div>
                     <div className="w-full mb-5">
@@ -63,6 +100,8 @@ export default function Branch() {
                             placeholder="Phone *"
                             autoComplete="off"
                             required
+                            value={formData.phone}
+                            onChange={handleChange}
                         />
                     </div>
                     <div className="w-full">
@@ -73,35 +112,42 @@ export default function Branch() {
                             name="message"
                             placeholder="Write message"
                             autoComplete="off"
-
+                            value={formData.message}
+                            onChange={handleChange}
                         />
                     </div>
                     <div className="w-[126px] mt-11">
-                        <Button
+                        <Button onClick={handleSubmit}
                             size="xl"
                         >
                             {['submit']}
                         </Button>
                     </div>
                 </div>
-                <div
-                    style={{ backgroundImage: `url(${bgImage})` }}
-                    className="w-[700px] rounded-3xl px-2.5 py-2 flex items-end">
+                <div className="w-[700px] relative">
 
-                    <div className=" w-full p-7.5 bg-white rounded-3xl flex items-center gap-7.5">
-                        <div className="w-14 h-14 flex items-center justify-center">
-                            <img className="w-[46.67px] h-[46.67px]"
-                                src={locationIcon} alt="location_Icon" />
+                    <iframe className="w-full h-full rounded-3xl"
+                        src={`${location}`}
+                        loading="lazy" >
+                    </iframe>
+                    <div className="absolute left-0 bottom-0 px-2.5 py-2">
+                        <div className=" w-[680px] p-7.5 bg-white rounded-3xl flex items-center gap-7.5">
+                            <div className="w-14 h-14 flex items-center justify-center">
+                                <img className="w-[46.67px] h-[46.67px]"
+                                    src={locationIcon} alt="location_Icon" />
 
-                        </div>
-                        <div className=" font-Poppins text-lg #1A1A1A w-[491px]">
-                            <p className="font-normal leading-[18px]">
-                                <span className="font-semibold leading-[36px]">JRR Towers</span>
-                                (2nd Floor), Pattalamma Temple Rd, Basavangudi, Bangalore, 560004
-                            </p>
+                            </div>
+                            <div className=" font-Poppins text-lg #1A1A1A w-[491px]">
+                                <p className="font-normal leading-[18px]">
+                                    <span className="font-semibold leading-[36px]">JRR Towers</span>
+                                    (2nd Floor), Pattalamma Temple Rd, Basavangudi, Bangalore, 560004
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </section >
     )

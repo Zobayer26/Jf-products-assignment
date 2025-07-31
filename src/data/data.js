@@ -138,31 +138,54 @@ const branchData = [
     id: 1,
     title: "Coimbatore",
     image: coimbatore,
+    location: `https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3888
+    .5238538579842!2d77.57606256170953!3d12.938295587321313!2m3!1f0!2f0!
+    3f0!3m2!1i1024!2i768!4f13.1!2m1!1sJRR%20Towers%20%20%20%20%20%20%20%
+    20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%
+    20%20%20(2nd%20Floor)%2C%20Pattalamma%20Temple%20Rd%2C%20Basavangudi%2
+    C%20Bangalore%2C%20560004!5e0!3m2!1sen!2sbd!4v1753963710169!5m2!1sen!2sbd`,
   },
   {
     id: 2,
     title: "chennai",
     image: chennai,
+    location: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756
+    .13152768556!2d80.04352163670585!3d13.047473102149144!2m3!1f0!2f0!3f0!3m2
+    !1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2s
+    Chennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sbd!4v1753966432493!5m2!1sen!2sbd`,
   },
   {
     id: 3,
     title: "hyderabad",
     image: hydrabad,
+    location: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647
+    .3424061043!2d78.2428942338!3d17.41228073759502!2m3!1f0!2f0!3f0!3m2!1i1
+    024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHy
+    derabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sbd!4v1753966680213!5m2!1sen!2sbd`,
   },
   {
     id: 4,
     title: "goa",
     image: goa,
+    location: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492481.2374300151!2d73.38188982947725!3d15.
+    348859665531796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfba106336b741%3A0xeaf887ff62f34092!
+    2sGoa%2C%20India!5e0!3m2!1sen!2sbd!4v1753966867095!5m2!1sen!2sbd`,
   },
   {
     id: 5,
     title: "Kochi",
     image: kochi,
+    location: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251479.49760686725!2d76.13696842810714!3d9
+    .986499898714902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!
+    2sKochi%2C%20Kerala%2C%20India!5e0!3m2!1sen!2sbd!4v1753966942458!5m2!1sen!2sbd`,
   },
   {
     id: 6,
     title: "mumbai",
     image: mumbai,
+    location: `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.70220553136!2d72.71379001915177!3d19.
+    0824819106581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!
+    2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sbd!4v1753967012824!5m2!1sen!2sbd`,
   },
 ];
 const images = [
